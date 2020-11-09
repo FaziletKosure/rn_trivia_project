@@ -13,6 +13,7 @@ const Finish = (props) => {
       <View style={finishPage.container}>
         <Text style={finishPage.text}>Your score is {userScore}</Text>
       </View>
+      <Button title="Play Aggain" onPress={()=> props.navigation.navigate('Intro')}  />
     </SafeAreaView>
   );
 };
